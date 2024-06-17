@@ -1,0 +1,17 @@
+<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="GM">
+<rect id="Rectangle" width="24" height="17" rx="2" fill="white"/>
+<g id="Clipped">
+<mask id="mask0_227_3769" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="17">
+<rect id="Rectangle_2" width="24" height="17" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_227_3769)">
+<g id="Group">
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.66695H24V0H0V5.66695Z" fill="#262626"/>
+<path id="Path_2" fill-rule="evenodd" clip-rule="evenodd" d="M0 11.3331H24V5.66699H0V11.3331Z" fill="#F01515"/>
+<path id="Path_3" fill-rule="evenodd" clip-rule="evenodd" d="M0 17H24V11.333H0V17Z" fill="#FFD521"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

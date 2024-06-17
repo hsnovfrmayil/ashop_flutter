@@ -1,0 +1,19 @@
+<svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="JP">
+<rect id="Rectangle" x="1.21436" y="1.2124" width="23.5714" height="16.575" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
+<g id="Clipped">
+<mask id="mask0_234_3833" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="1" width="24" height="17">
+<rect id="Rectangle_2" x="1.21436" y="1.2124" width="23.5714" height="16.575" rx="1.75" fill="white"/>
+</mask>
+<g mask="url(#mask0_234_3833)">
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M13.0003 14.5999C15.8409 14.5999 18.1431 12.3168 18.1431 9.4999C18.1431 6.683 15.8409 4.3999 13.0003 4.3999C10.1597 4.3999 7.85742 6.683 7.85742 9.4999C7.85742 12.3168 10.1597 14.5999 13.0003 14.5999Z" fill="url(#paint0_linear_234_3833)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_234_3833" x1="2.71456" y1="4.3999" x2="2.71456" y2="14.5999" gradientUnits="userSpaceOnUse">
+<stop stop-color="#D81441"/>
+<stop offset="1" stop-color="#BB0831"/>
+</linearGradient>
+</defs>
+</svg>

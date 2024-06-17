@@ -1,0 +1,16 @@
+<svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="VN">
+<rect id="Rectangle" width="24" height="17" rx="2" fill="white"/>
+<g id="Clipped">
+<mask id="mask0_234_3650" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="17">
+<rect id="Rectangle_2" width="24" height="17" rx="2" fill="white"/>
+</mask>
+<g mask="url(#mask0_234_3650)">
+<g id="Group">
+<rect id="Rectangle_3" width="24" height="17" fill="#EA403F"/>
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M12 10.4889L8.97712 12.6224L10.0924 9.1119L7.10889 6.9274L10.8211 6.8934L12 3.3999L13.1789 6.8934L16.8911 6.9274L13.9076 9.1119L15.0229 12.6224L12 10.4889Z" fill="#FFFE4E"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

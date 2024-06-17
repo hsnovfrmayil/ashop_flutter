@@ -1,0 +1,16 @@
+<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="ID">
+<rect id="Rectangle" x="1.21436" y="1.19995" width="23.5714" height="15.6" rx="1.75" fill="white" stroke="#F5F5F5" stroke-width="0.5"/>
+<g id="Clipped">
+<mask id="mask0_234_2843" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="1" width="24" height="16">
+<rect id="Rectangle_2" x="1.21436" y="1.19995" width="23.5714" height="15.6" rx="1.75" fill="white"/>
+</mask>
+<g mask="url(#mask0_234_2843)">
+<g id="Group">
+<rect id="Rectangle_3" x="17.0005" y="1" width="8" height="16" fill="#FF8515"/>
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M1 17H8.99971V1H1V17Z" fill="#07BB59"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
