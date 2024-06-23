@@ -104,16 +104,27 @@ class EntranceBase extends StatelessWidget {
                   ContainerWithOnlyRadius(
                     imageUrl: iconList[i],
                     color: colorList[i],
+                    text: "Prevent corona",
                   ),
                 ]
               ],
             ),
           ),
           const SizedBox(height: 24),
+          const Align(
+            alignment: Alignment.centerLeft,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: Text(
+                "Voucher Program",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+              ),
+            ),
+          ),
           Stack(
             children: [
               Positioned(
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   child: SvgPicture.asset(
                     "assets/icons/combii.svg",
@@ -131,11 +142,14 @@ class EntranceBase extends StatelessWidget {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   SvgPicture.asset(
                                     "assets/images/ashop.svg",
@@ -159,7 +173,10 @@ class EntranceBase extends StatelessWidget {
                               )
                             ],
                           ),
-                          Column(
+                          const SizedBox(
+                            width: 60,
+                          ),
+                          const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
@@ -167,11 +184,57 @@ class EntranceBase extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 20, fontWeight: FontWeight.w600),
                               ),
-                              Text(
-                                "Member",
-                                style: TextStyle(
-                                    fontSize: 14, fontWeight: FontWeight.w500),
+                              Row(
+                                children: [
+                                  Text(
+                                    "Member",
+                                    style: TextStyle(
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w500),
+                                  ),
+                                  SizedBox(width: 8),
+                                  Icon(
+                                    CupertinoIcons.star_fill,
+                                    size: 12,
+                                    color: Color.fromRGBO(247, 217, 111, 1.0),
+                                  ),
+                                  SizedBox(width: 8),
+                                  Icon(
+                                    CupertinoIcons.star_fill,
+                                    size: 12,
+                                    color: Color.fromRGBO(247, 217, 111, 1.0),
+                                  ),
+                                  SizedBox(width: 8),
+                                  Icon(
+                                    CupertinoIcons.star_fill,
+                                    size: 12,
+                                    color: Color.fromRGBO(247, 217, 111, 1.0),
+                                  ),
+                                ],
                               ),
+                              SizedBox(height: 10),
+                              Text(
+                                "Discount code \$1",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w600, fontSize: 14),
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    "--------",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Text(
+                                    "200 points",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600,
+                                      color: Color.fromRGBO(243, 92, 86, 1.0),
+                                    ),
+                                  )
+                                ],
+                              )
                             ],
                           )
                         ],
@@ -193,34 +256,50 @@ class ContainerWithOnlyRadius extends StatelessWidget {
     super.key,
     required this.imageUrl,
     required this.color,
+    required this.text,
   });
   final String imageUrl;
   final Color color;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16),
-      width: 60,
-      height: 60,
-      decoration: BoxDecoration(
-        borderRadius: const BorderRadius.only(
-          bottomLeft: Radius.circular(16),
-          bottomRight: Radius.circular(16),
-          topLeft: Radius.circular(16),
-        ),
-        color: color,
-      ),
-      child: Center(
-        child: Container(
-          width: 24,
-          height: 24,
-          child: SvgPicture.asset(
-            imageUrl,
-            fit: BoxFit.fill,
+    return Column(
+      children: [
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 16),
+          width: 60,
+          height: 60,
+          decoration: BoxDecoration(
+            borderRadius: const BorderRadius.only(
+              bottomLeft: Radius.circular(16),
+              bottomRight: Radius.circular(16),
+              topLeft: Radius.circular(16),
+            ),
+            color: color,
+          ),
+          child: Center(
+            child: Container(
+              width: 24,
+              height: 24,
+              child: SvgPicture.asset(
+                imageUrl,
+                fit: BoxFit.fill,
+              ),
+            ),
           ),
         ),
-      ),
+        const SizedBox(height: 10),
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 16),
+          width: 60,
+          height: 60,
+          child: Text(
+            text,
+            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+          ),
+        ),
+      ],
     );
   }
 }
